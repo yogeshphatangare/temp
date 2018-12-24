@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import {MatIconModule} from '@angular/material/icon';
+import { MyNavComponent } from './main/my-nav/my-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatListModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    MyNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,MatIconModule
+    BrowserAnimationsModule,MatIconModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
