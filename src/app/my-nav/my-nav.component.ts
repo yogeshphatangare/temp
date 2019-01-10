@@ -18,7 +18,7 @@ export class MyNavComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {
-     this.myNav.close();
+  // this.myNav.close();
   }
 
 }
