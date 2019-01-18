@@ -11,11 +11,15 @@ import {
   MatToolbarModule, MatButtonModule,
   MatSidenavModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule
 } from '@angular/material';
+import { MatSelectModule } from '@angular/material/select';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FirstComponent } from './first/first.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CommonModule } from '@angular/common';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { MatChipsModule } from '@angular/material/chips';
+import { TempMainComponent } from './temp-main/temp-main.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +27,18 @@ import { CommonModule } from '@angular/common';
     MyNavComponent,
     DashboardComponent,
     FirstComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    TempMainComponent
   ],
   imports: [
+    HttpClientModule,
+    MatSelectModule,
+    HttpModule,
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule, MatIconModule, LayoutModule,
-    MatToolbarModule, MatButtonModule, MatSidenavModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule
+    MatToolbarModule, MatChipsModule, MatButtonModule, MatSidenavModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
